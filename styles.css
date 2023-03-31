@@ -36,6 +36,7 @@ section {
 
   padding: 18.4rem 0 16.8rem 0;
   background-color: #202024;
+  border-radius: 0 0 10px 10px;
 }
 
 .pessoa {
@@ -93,4 +94,6 @@ ul a {
   display: flex;
   list-style: none;
   background-color: #323238;
+  border-radius: 10px;
+
 }
