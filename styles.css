@@ -1,3 +1,4 @@
+/* Seleciona todos os elementos */
 * {
   margin: 0;
   padding: 0;
@@ -6,74 +7,86 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Raíz do documento*/
 :root {
   font-size: 62.5%;
 }
 
-body {
-  font-size: 1.6rem;
-  height: 100vh;
-  display: flex;
-  /* background-color: rgb(30, 30, 32); */
 
+/* Fundo do projeto */
+body {
+  display: flex;
+  height: 100vh;
+
+  font-size: 1.6rem;
   font-family: 'Roboto', sans-serif;
+
   background-color: #151516;
 }
 
+/* Bilhete */
 section {
-  margin: 0 auto;
-  background-image: url(assets/img/mask.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  height: 81.2rem;
-  width: 37.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 .9rem .1rem  white;
 
+  width: 37.5rem;
+  height: 81.2rem;
+  margin: 0 auto;
   padding: 18.4rem 0 16.8rem 0;
+
+  background-image: url(assets/img/mask.png);
+  background-repeat: no-repeat;
+  background-position: top center;
   background-color: #202024;
+  
+  box-shadow: 0 0 .9rem .1rem  white;
   border-radius: 0 0 10px 10px;
 }
 
-.pessoa {
+/* Minha foto */
+.foto-perfil {
   margin-bottom: 2.4rem;
   width: 16.0rem;
 
   clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
 }
 
-h1 {
+.nome-perfil {
   margin-bottom: .4rem;
   font-weight: bold;
   font-size: 2.4rem;
 }
 
-div {
+/* Meu Github */
+.github {
   display: flex;
   margin-bottom: 3.2rem;
   color: #C4C4CC;
 }
 
-div img {
+.github .logo-github {
   margin-right: 1.2rem;
 }
 
-div a:visited {
-  color: #C4C4CC; /*  ver uma cor de quando o site é visitado  */
+/* Link do meu Github */
+.nome-perfil, .sobremim-perfil {
+  color: #E1E1E6;
 }
 
-div a:hover {
+/* Cor do link do Github quando o mouse passa por cima */
+.github .nome-github:hover {
   color: #202024;
   background-color: #C4C4CC;
 }
 
-h1, .sobremim-perfil {
-  color: #E1E1E6;
+/* Cor selecionada para quando o link do meu Github foi visitado */
+.github .nome-github:visited {
+  color: #C4C4CC; /*  ver uma cor de quando o site é visitado  */
 }
 
+/* Uma pequena descrição sobre mim */
 .sobremim-perfil {
   margin-bottom: 6.4rem;
   width: 70%;
@@ -81,12 +94,15 @@ h1, .sobremim-perfil {
   font-size: 1.6rem
 }
 
-ul {
+/* 
+  Lista da minhas redes sociais
+  Obs: Preciso melhorar o HTML
+*/
+.redes-socias {
   display: flex;
-
 }
 
-ul a {
+.redes-socias a {
   padding: 1.4rem;
   margin-right: 1.5rem;
 
